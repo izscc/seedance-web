@@ -68,3 +68,14 @@ POST /v1/video/generations
 npm run build
 git status --short
 ```
+
+## 界面样式没有生效时
+
+如果本地开发页看起来像“裸 HTML”（没有玻璃面板、没有卡片布局），通常是 Next/Turbopack 开发缓存仍在服务旧 CSS。执行：
+
+```bash
+npm run clean
+npm run dev
+```
+
+然后在浏览器中强制刷新页面。
